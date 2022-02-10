@@ -48,6 +48,10 @@ select {
 	outline: inherit;
 	border: inherit;
 }
+input {
+	border-radius: 0;
+	-webkit-appearance: none;
+}
 
 a {
 	color: inherit;
