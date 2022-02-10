@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>test</title>
+	<link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<header class="wrapper__header header">
+			<div class='header__container main-container'>
+				<div class="header__inner">
+					<div class="header__logo">
+						<a class="logo" href="#">
+							<img class="logo__img" src="images/icons/logo.svg" alt="Логотип" width="67" height="16">
+						</a>
+					</div>
+					<nav class="header__menu menu">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a class="menu__link" href="#">постельное белье</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#">одежда для дома</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#">Одежда для улицы</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#">ВЫход</a>
+							</li>
+						</ul>
+					</nav>
+					<ul class="header__user-menu user-menu">
+						<li class="user-menu__item">
+							<a class="user-menu__link" href="#">
+								<svg class="icon-user">
+									<use xlink:href="sprite.svg#user-icon"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="user-menu__item">
+							<a class="user-menu__link" href="#">
+								<svg class="icon-heart">
+									<use xlink:href="sprite.svg#heart-icon"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="user-menu__item">
+							<a class="user-menu__link" href="#">
+								<svg class="icon-bag">
+									<use xlink:href="sprite.svg#bag-icon"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+					<button class="header__btn icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+
+		<div class="wrapper__content content">
+
+			<section class="wrapper__product product">
+				<div class='product__container main-container'>
+					<div class="product__inner">
+						<div class="product__gallery">
+							<ul class="product__big product-big">
+								<li class="product-big__item"><img class="product-big__img" src="images/product/01.jpg" width="686"
+										height="878" alt="какая-то картинка"></li>
+								<li class="product-big__item"><img class="product-big__img" src="images/product/02.jpg" width="686"
+										height="878" alt="какая-то картинка"></li>
+								<li class="product-big__item"><img class="product-big__img" src="images/product/03.jpg" width="686"
+										height="878" alt="какая-то картинка"></li>
+								<li class="product-big__item"><img class="product-big__img" src="images/product/04.jpg" width="686"
+										height="878" alt="какая-то картинка"></li>
+							</ul>
+							<ul class="product__small product-small">
+								<li class="product-small__item"><img class="product-small__img" src="images/product/01.jpg" width="70"
+										height="91" alt="какая-то картинка"></li>
+								<li class="product-small__item"><img class="product-small__img" src="images/product/02.jpg" width="70"
+										height="91" alt="какая-то картинка"></li>
+								<li class="product-small__item"><img class="product-small__img" src="images/product/03.jpg" width="70"
+										height="91" alt="какая-то картинка"></li>
+								<li class="product-small__item"><img class="product-small__img" src="images/product/04.jpg" width="70"
+										height="91" alt="какая-то картинка"></li>
+							</ul>
+						</div>
+
+						<div class="product__content">
+							<div class="product__body">
+								<h2 class="product__title">Пижама для девочек</h2>
+								<span class="product__article">Арт. 02765/46</span>
+								<a class="product__reposnds" href="#">
+									<span class="product__reposnds-text">Отзывы </span><span id="star-raiting"
+										data-rateyo-rating="4"></span> <span class="product__reposnds-text">14 отзывов</span>
+								</a>
+
+								<div class="product__prices-box">
+									<a class="product__prices" href="#">
+										<span class="product__price-new">800 ₽</span>
+										<span class="product__price-old">1 500 ₽</span>
+									</a>
+									<div class="product__status">
+										<span class="product__promo product__promo--discount">скидка -36%</span>
+										<span class="product__promo product__promo--promotion">акция -20%</span>
+									</div>
+								</div>
+								<select class="product__sizes" name="" id="">
+									<option value="">Выбрать размер</option>
+									<option value="">Выбрать размер</option>
+									<option value="">Выбрать размер</option>
+								</select>
+								<a class="product__link-choose link" href="#">Определить размер</a>
+								<div class="product__wrapper">
+									<form class="product__form" action="#">
+										<div class="product__popup"><span id="product__popup"></span></div>
+										<input class="product__input" type="number" name="input-number" id="product__input" value="1"
+											min="0" placeholder="1">
+										<!-- <button class="product__btn btn" type="submit">Добавить в корзину</button> -->
+										<input class="product__btn btn" id="product__btn" type="submit" value="Добавить в корзину">
+									</form>
+									<button class="product__btn-like btn" id="product__btn-like" type="button">
+										<svg class="icon-heart">
+											<use xlink:href="sprite.svg#heart-icon"></use>
+										</svg>
+									</button>
+								</div>
+								<a class="product__link-buy link" href="#">Купить в 1 клик</a>
+							</div>
+							<ul class="product__list">
+								<li class="product__item"><a class="product__link link product__link--description" href="#">Описание
+										товара</a></li>
+								<li class="product__item"><a class="product__link link product__link--delivery" href="#">Доставка и
+										возврат</a></li>
+								<li class="product__item"><a class="product__link link product__link--payment" href="#">Способы
+										оплаты</a></li>
+							</ul>
+						</div>
+					</div>
+					<a class="product__link-all link" href="#">Посмотреть все стили</a>
+				</div>
+			</section>
+
+			<section class="styles">
+				<div class='styles__container main-container'>
+					<h2 class="sr-only">Какой-то заголовок</h2>
+					<ul class="styles__inner">
+						<li class="styles__item styles__item--big">
+							<div class="styles__box">
+								<button class="styles__btn-screen" type="button"></button>
+								<button class="styles__btn-bag" type="button">Узнай, что на мне</button>
+								<button class="styles__btn-like" type="button">200</button>
+							</div>
+							<img class="styles__img" src="images/styles/01.jpg" width="335" height="336" alt="Какая-то картинка">
+						</li>
+
+						<li class="styles__item">
+							<div class="styles__box">
+								<button class="styles__btn-screen" type="button"></button>
+								<button class="styles__btn-bag" type="button">Узнай, что на мне</button>
+								<button class="styles__btn-like" type="button">200</button>
+							</div>
+							<img class="styles__img" src="images/styles/02.jpg" width="335" height="336" alt="Какая-то картинка">
+						</li>
+
+						<li class="styles__item">
+							<div class="styles__box">
+								<button class="styles__btn-screen" type="button"></button>
+								<button class="styles__btn-bag" type="button">Узнай, что на мне</button>
+								<button class="styles__btn-like" type="button">200</button>
+							</div>
+							<img class="styles__img" src="images/styles/03.jpg" width="335" height="336" alt="Какая-то картинка">
+						</li>
+
+						<li class="styles__item">
+							<div class="styles__box">
+								<button class="styles__btn-screen" type="button"></button>
+								<button class="styles__btn-bag" type="button">Узнай, что на мне</button>
+								<button class="styles__btn-like" type="button">200</button>
+							</div>
+							<img class="styles__img" src="images/styles/04.jpg" width="335" height="336" alt="Какая-то картинка">
+						</li>
+
+						<li class="styles__item">
+							<a class="styles__link" href="#"></a>
+							<div class="styles__box">
+								<button class="styles__btn-screen" type="button"></button>
+								<button class="styles__btn-bag" type="button">Узнай, что на мне</button>
+								<button class="styles__btn-like" type="button">200</button>
+							</div>
+							<img class="styles__img" src="images/styles/05.jpg" width="335" height="336" alt="Какая-то картинка">
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+
+		<footer class="wrapper__footer footer">
+			<div class='footer__container main-container'>
+				<ul class="footer__columns">
+					<li class="footer__column">
+						<h2 class="footer__column-title">покупателям</h2>
+						<ul class="footer__list">
+							<li class="footer__item"><a class="footer__item-link" href="#">Каталог</a></li>
+							<li class="footer__item"><a class="footer__item-link" href="#">Акции</a></li>
+							<li class="footer__item"><a class="footer__item-link" href="#">Бренды</a></li>
+						</ul>
+					</li>
+					<li class="footer__column">
+						<h2 class="footer__column-title">о нас</h2>
+						<ul class="footer__list">
+							<li class="footer__item"><a class="footer__item-link" href="#">О компании</a></li>
+							<li class="footer__item"><a class="footer__item-link" href="#">Новости</a></li>
+							<li class="footer__item"><a class="footer__item-link" href="#">Команда</a></li>
+						</ul>
+					</li>
+					<li class="footer__column footer__column--form">
+						<h2 class="footer__column-title">Узнайте первыми о новинках и акциях</h2>
+						<form class="footer__form" action="#">
+							<div class="footer__input-wrapper">
+								<input class="footer__input" placeholder="Адрес электронной почты" type="email" required>
+								<span class="footer__input-element"></span>
+							</div>
+							<button class="footer__btn" type="submit">Подписаться</button>
+						</form>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>
